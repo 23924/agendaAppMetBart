@@ -1,0 +1,108 @@
+/*
+ | ITCSS STRUCTURE: naming convention _<layer>.<partial>.scss
+ */
+/*
+ | SETTINGS: base font size, colour palettes
+ */
+body {
+  font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+/*
+ | TOOLS: mixins and functions
+ */
+/*
+ | GENERIC: CSS resets, normalize
+ */
+/*
+ | ELEMENTS: Base styling for unclassed HTML elements (h1, anchor, etc.)
+ */
+/*
+ | OBJECTS: NON cosmetic objects
+ */
+/*
+ | COMPONENTS
+ */
+.agenda {
+  transition: 0.1s all ease-in-out;
+  background: #9da0a4;
+  width: 300px;
+  min-height: 10px;
+  margin-bottom: 6px;
+  color: black;
+  padding: 6px;
+  position: relative;
+  cursor: pointer; }
+  .agenda__time {
+    display: inline;
+    margin-right: 6px;
+    margin-left: 3px; }
+  .agenda__day {
+    display: inline;
+    background: black;
+    padding: 6px;
+    color: white;
+    font-weight: bold; }
+  .agenda__arrangement {
+    display: inline;
+    padding: 6px;
+    color: white;
+    margin-left: 5px; }
+  .agenda__delete {
+    position: absolute;
+    padding: 6px;
+    display: inline;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+    background: red;
+    color: white; }
+  .agenda__delete:hover {
+    font-weight: bold; }
+  .agenda:hover {
+    opacity: 0.8;
+    transform: scale(1.1); }
+
+.studentDetail {
+  position: fixed;
+  height: 100%;
+  background: #333333;
+  width: 350px;
+  top: 0px;
+  right: -400px;
+  color: white;
+  padding: 5px;
+  transition: all .3s ease-in-out; }
+  .studentDetail--visible {
+    right: 0px; }
+
+.button {
+  position: fixed;
+  background: red;
+  color: deepskyblue;
+  padding: 30px;
+  z-index: 11000;
+  transition: .2s ease-in-out; }
+
+.button:hover {
+  background: black;
+  color: white;
+  transition: .2s ease-in-out; }
+
+/*
+ | TRUMPS: utility and helper classes, hacks and overrides
+ */
+.weekday {
+  width: 10%;
+  box-sizing: border-box;
+  float: left;
+  margin-left: 2em;
+  margin-top: 3em;
+  overflow: auto;
+  min-width: 15em; }
+
+#title {
+  width: 100%;
+  text-align: center;
+  margin: 1em; }
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZXMuY3NzIiwic291cmNlUm9vdCI6IiJ9*/

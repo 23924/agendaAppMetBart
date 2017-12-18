@@ -1,0 +1,51 @@
+/*
+ | ITCSS STRUCTURE: naming convention _<layer>.<partial>.scss
+ */
+
+/*
+ | SETTINGS: base font size, colour palettes
+ */
+@import 'settings/_settings.font';
+
+/*
+ | TOOLS: mixins and functions
+ */
+@import 'tools/_tools.boxsizing';
+
+/*
+ | GENERIC: CSS resets, normalize
+ */
+
+/*
+ | ELEMENTS: Base styling for unclassed HTML elements (h1, anchor, etc.)
+ */
+
+/*
+ | OBJECTS: NON cosmetic objects
+ */
+
+/*
+ | COMPONENTS
+ */
+@import 'components/_components.student';
+@import 'components/_components.studentdetail';
+@import 'components/_components.button';
+/*
+ | TRUMPS: utility and helper classes, hacks and overrides
+ */
+
+ .weekday{
+   width: 10%;
+   box-sizing: border-box;
+   float: left;
+   margin-left: 2em;
+   margin-top: 3em;
+   overflow: auto;
+   min-width: 15em;
+ }
+
+#title{
+  width: 100%;
+  text-align: center;
+  margin: 1em;
+}

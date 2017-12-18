@@ -1,0 +1,55 @@
+$margin: 6px;
+
+.agenda {
+  transition: 0.1s all ease-in-out;
+  background: #9da0a4;
+  width: 300px;
+  min-height: 10px;
+  margin-bottom: $margin;
+  color: black;
+  padding: $margin;
+  position: relative;
+  cursor: pointer;
+
+
+  &__time {
+    display: inline;
+    margin-right: $margin;
+    margin-left: 3px;
+  }
+
+  &__day {
+    display: inline;
+    background: black;
+    padding: $margin;
+    color: white;
+
+    font-weight: bold;
+  }
+  &__arrangement {
+    display: inline;
+    padding: $margin;
+    color: white;
+    margin-left: 5px;
+
+  }
+  &__delete {
+    position: absolute;
+    padding: $margin;
+    display: inline;
+    top: 0px;
+    right:0px;
+    cursor: pointer;
+    background: red;
+    color: white;
+  }
+  &__delete:hover {
+    font-weight: bold;
+  }
+
+  &:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+  }
+
+}
